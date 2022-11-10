@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ESP IOT DASHBOARD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <h1>Home</h1>
+    </div>
+    <div class="content">
+        <div class="card">
+            <p>Main</p>
+            <p class="card-title">68</p>
+            <div class="mode">
+                <button onclick="updateMode(this.id)" id="heat" value="false">Heat</button>
+                <button onclick="updateMode(this.id)" id="off" value="true">Off</button>
+                <button onclick="updateMode(this.id)" id="cool" value="false">Cool</button>
+            </div>
+            <p class="switch">
+                <input type="range" onchange="updateSlider(this)" id="slider1" min="56" max="80" step="1" value="68"
+                    class="slider">
+            </p>
+            <p class="state">Setting: <span id="sliderValue1">68</span> </p>
+        </div>
+        <div class="card-grid">
+            <div class="card">
+                <p>Master Bed</p>
+                <p class="card-title" id="room1Temp">71</p>
+                <p class="switch">
+                    <input type="range" onchange="updateSlider(this)" id="slider2" min="56" max="80" step="1"
+                        value="68" class="slider">
+                </p>
+                <p class="state">Setting: <span id="sliderValue2">70</span> </p>
+            </div>
+            <div class="card">
+                <p>Office</p>
+                <p class="card-title" id="room2Temp">70</p>
+                <p class="switch">
+                    <input type="range" onchange="updateSlider(this)" id="slider3" min="56" max="80" step="1"
+                        value="68" class="slider">
+                </p>
+                <p class="state">Setting: <span id="sliderValue3">69</span> </p>
+            </div>
+            <div class="card">
+                <p>Guest West</p>
+                <p class="card-title" id="room3Temp">68</p>
+                <p class="switch">
+                    <input type="range" onchange="updateSlider(this)" id="slider4" min="56" max="80" step="1"
+                        value="68" class="slider">
+                </p>
+                <p class="state">Setting: <span id="sliderValue4">68</span></p>
+            </div>
+            <div class="card">
+                <p>Guest East</p>
+                <p class="card-title" id="room4Temp">68</p>
+                <p class="switch">
+                    <input type="range" onchange="updateSlider(this)" id="slider5" min="56" max="80" step="1"
+                        value="68" class="slider">
+                </p>
+                <p class="state">Setting: <span id="sliderValue5">70</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
