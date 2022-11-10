@@ -6,8 +6,8 @@
 #include <Arduino_JSON.h>
 
 // Replace with your network credentials
-const char *ssid = "Sarah and dan";
-const char *password = "2S3x15T8R0";
+const char *ssid = "xxx";
+const char *password = "xxx";
 
 // Create AsyncWebServer object on port 80
 AsyncWebServer server(80);
